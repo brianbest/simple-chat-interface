@@ -1,12 +1,6 @@
 //Pure Javascript version
 
-var emoji ={
-  ":D":'1F604',
-  ";)":'1F609',
-  ":P":'1F61C',
-  "-_-":'1F620',
-  ":(":'1F622'
-};
+
 
   //Check for Illegal Messages
   //-------------------------------
@@ -21,8 +15,42 @@ var emoji ={
 
 
   function parseEmoji(message){
+
+    var emoji =[
+      {
+        'char':":D",
+        'emoji':'1F604'
+      },
+      {
+        'char':";\)",
+        'emoji':'1F609'
+      },
+      {
+        'char':":P",
+        'emoji':'1F61C'
+      },
+      {
+        'char': "\-\_\-",
+        'emoji':'1F620'
+      },
+      {
+        'char':":\(",
+        'emoji':'1F622'
+      }
+    ];
+
     var check = message;
 
+    for(var i = 0; i < 4; i++){
+      console.log(i);
+      var newjex = new RegExp(""+emoji[i].char+"");
+      var doeshave = check.search(newjex);
+      if (doeshave > 0){
+        console.log('has');
+        check = check.replace(emoji[i].char,emoji[i].emoji);
+      }
+    }
+    return check;
   }
 
 
