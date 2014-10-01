@@ -1,3 +1,4 @@
+@import url(http://fonts.googleapis.com/css?family=Josefin+Sans:300,400|Inconsolata);
 .chunk {
   width: 100%;
   margin-left: auto;
@@ -61,7 +62,6 @@
 
 body {
   height: 100vh;
-  width: 100%;
   background: -webkit-linear-gradient(45deg, #112F41, #068587);
   /* For Safari */
   background: -o-linear-gradient(45deg, #112F41, #068587);
@@ -71,7 +71,11 @@ body {
   background: linear-gradient(45deg, #112F41, #068587); }
 
 h1 {
+  font-family: 'Josefin Sans', sans-serif;
   color: #f0f0f0; }
+
+p, input {
+  font-family: 'Inconsolata', sans-serif; }
 
 .chat_holder .holder {
   float: none;
@@ -82,13 +86,34 @@ h1 {
   width: 100%;
   background-color: rgba(255, 255, 255, 0);
   border: none;
-  border-bottom: 1px solid rgba(252, 176, 60, 0.6); }
+  border-bottom: 1px solid rgba(252, 176, 60, 0.6);
+  font-size: 1.5rem; }
   .chat_holder input[type="text"]:focus {
     outline: none !important; }
 
 #msg_area {
-  height: 20rem;
+  height: 25rem;
   overflow: scroll; }
   #msg_area p {
     color: #fff;
-    text-align: center; }
+    text-align: center;
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem; }
+    #msg_area p:nth-child(odd) {
+      background: -webkit-linear-gradient(45deg, rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0));
+      /* For Safari */
+      background: -o-linear-gradient(45deg, rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0));
+      /* For Opera */
+      background: -moz-linear-gradient(45deg, rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0));
+      /* For Firefox  */
+      background: linear-gradient(45deg, rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0)); }
+    #msg_area p:nth-child(even) {
+      background: -webkit-linear-gradient(90deg, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.3));
+      /* For Safari */
+      background: -o-linear-gradient(90deg, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.3));
+      /* For Opera */
+      background: -moz-linear-gradient(90deg, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.3));
+      /* For Firefox  */
+      background: linear-gradient(90deg, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.3)); }
