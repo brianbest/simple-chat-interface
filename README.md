@@ -44,3 +44,8 @@ Changed the font face... really started to get annoyed with how my browser stand
 
 Here is what the interface looks like right now
 ![alt tag](http://i.imgur.com/luvbsUM.gif)
+
+*Date: October 1 6:30 pm*
+I've added in basic error checking for empty values. I would also like to add in Emoji for users, I've found a [site](http://apps.timwhitlock.info/emoji/tables/unicode) that shows me the codes for the various types but I don't think there is desktop browser support... I may just roll with [font awesome](http://fortawesome.github.io/Font-Awesome/).
+
+Yeah apparently Chrome does not support Emoji at this time, Mobile Chrome does but not the desktop version... Funny enough latest versions of IE does support Emoji! I'm going to add this feature, just sucks I wont be able to use Chrome dev tools.
