@@ -4,20 +4,23 @@
     <link rel="stylesheet" type="text/css" href="styles/css/style.css">
   </head>
   <body>
-    <header>
-      <h1>Hello World</h1>
-    </header>
+    <div class="wrap">
+      <header class="chunk">
+        <h1>Chat</h1>
+      </header>
+      <section class="chunk chat_holder">
+        <div class="size-7 holder">
+          <div id="msg_area">
+            <!-- Messages to be appended here -->
+          </div>
 
-    <div id="msg_area">
-      <!-- Messages to be appended here -->
+          <!-- User input -->
+          <input type="text" id="chat_area"/>
+        </div>
+      </section>
     </div>
-
-    <section>
-      <!-- User input -->
-      <input type="text" id="chat_area"/>
-    </section>
     <script src="scripts/js/pure.js"></script>
-    
+
     <!-- CoffeeScript file -->
     <!--<script src="scripts/js/app.js"></script>-->
   </body>

@@ -16,10 +16,19 @@ In order to meet the requirements of the assignment the first draft of this proj
 So as it turns out I've been doing JS Event listeners wrong this whole time.
 
 This line of code only returns the value of chatActive();
-    document.getElementById('chat_area').addEventListener("click", chatActive(),false);
+      document.getElementById('chat_area').addEventListener("click", chatActive(),false);
 This line of code will actually run the function
-    document.getElementById('chat_area').addEventListener("click", function(){chatClicked();}, false);
+      document.getElementById('chat_area').addEventListener("click", function(){chatClicked();}, false);
 
 ####Its working!!!
 
 So I have the logic of adding user generated text to the screen working. Now I need to fix some funky things ie: when you hit enter the line return doesn't go away. but yeah this is working now.
+
+I have shown this off to a few people now... random feedback from [Heather](http://hypertasker.com/) apparently my GitHub profile photo looks nothing like me, so thats changing.
+
+My mind is moving towards UI/UX now, how do I make this look awesome? Some of the obvious answers would be MSN Messanger, Facebook, even Twitter. I just want to keep this simple though. So I'm going to take my insperation from [OmniWriter](http://www.ommwriter.com/) and draw on the aforementioned for functionality.
+
+Here is what I wireframed out
+[Imgur](http://i.imgur.com/ZtL63Ad.jpg)
+
+The background should be simple and the actual interface is minimal. The fist things you should see is the title and the chat line.

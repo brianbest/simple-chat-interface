@@ -11,7 +11,7 @@
       document.getElementById('msg_area').appendChild(msg_holder);
 
       //Clear chat field when complete
-      document.getElementById('chat_area').value = "first";
+      document.getElementById('chat_area').value = "";
     }
   }
 
