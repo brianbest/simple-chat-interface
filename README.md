@@ -29,7 +29,7 @@ I have shown this off to a few people now... random feedback from [Heather](http
 My mind is moving towards UI/UX now, how do I make this look awesome? Some of the obvious answers would be MSN Messanger, Facebook, even Twitter. I just want to keep this simple though. So I'm going to take my insperation from [OmniWriter](http://www.ommwriter.com/) and draw on the aforementioned for functionality.
 
 Here is what I wireframed out
-[](http://i.imgur.com/ZtL63Ad.jpg)
+![alt tag](http://i.imgur.com/ZtL63Ad.jpg)
 
 The background should be simple and the actual interface is minimal. The fist things you should see is the title and the chat line.
 
@@ -38,3 +38,9 @@ The background should be simple and the actual interface is minimal. The fist th
 I'm going to start date timing these updates for easy following.
 
 Changed the font face... really started to get annoyed with how my browser standard font looked like. I'm importing [Josefin Sans](https://www.google.com/fonts/specimen/Josefin+Sans) as the header font and [Inconsolata](https://www.google.com/fonts/specimen/Inconsolata) as the paragraph and input font
+
+
+*Date: October 1 4:51pm*
+
+Here is what the interface looks like right now
+![alt tag](http://i.imgur.com/luvbsUM.gif)
