@@ -12,3 +12,14 @@ In order to teach you the fundamentals, do not use external libraries or third-p
 ##Development
 
 In order to meet the requirements of the assignment the first draft of this project will be written in pure JS. As a stretch goal for this project I want to learn how to use [CoffeeScript](http://coffeescript.org/) to accomplish the same result.
+
+So as it turns out I've been doing JS Event listeners wrong this whole time.
+
+This line of code only returns the value of chatActive();
+    document.getElementById('chat_area').addEventListener("click", chatActive(),false);
+This line of code will actually run the function
+    document.getElementById('chat_area').addEventListener("click", function(){chatClicked();}, false);
+
+####Its working!!!
+
+So I have the logic of adding user generated text to the screen working. Now I need to fix some funky things ie: when you hit enter the line return doesn't go away. but yeah this is working now.
