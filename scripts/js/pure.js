@@ -18,23 +18,23 @@
 
     var emoji =[
       {
-        'char':":D",
-        'emoji':'1F604'
+        'char':'happy',
+        'emoji':'0x1F604'
       },
       {
-        'char':";\)",
+        'char':"[;][\)]",
         'emoji':'1F609'
       },
       {
-        'char':":P",
+        'char':"[:][P]",
         'emoji':'1F61C'
       },
       {
-        'char': "\-\_\-",
+        'char': "[\-][\_][\-]",
         'emoji':'1F620'
       },
       {
-        'char':":\(",
+        'char':"[:][\(]",
         'emoji':'1F622'
       }
     ];
@@ -42,12 +42,12 @@
     var check = message;
 
     for(var i = 0; i < 4; i++){
-      console.log(i);
-      var newjex = new RegExp(""+emoji[i].char+"");
-      var doeshave = check.search(newjex);
-      if (doeshave > 0){
+      var doeshave = check.search(emoji[i].char);
+      console.log(emoji[i].char+" "+doeshave);
+      if (doeshave === 0){
         console.log('has');
-        check = check.replace(emoji[i].char,emoji[i].emoji);
+        var emoji_make = String.fromCharCode(emoji[i].emoji);
+        check = check.replace(emoji[i].char,emoji);
       }
     }
     return check;
